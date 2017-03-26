@@ -3,6 +3,7 @@
 --       You can create database locally to test it.
 --       Consider add ';' at end sentence.
 
+
 CREATE TABLE employee (
 	id bigserial primary key,
 	first_name varchar(30) NOT NULL,
@@ -44,7 +45,36 @@ FROM employee e, employee_department d
 WHERE e.department_id = d.id
 ORDER BY e.id ASC ;
 
+
+--sql2 
+
 CREATE TABLE employee_hobby (
-);
+	id bigserial primary key,
+	name varchar(20) NOT NULL,
+	description text NOT NULL
+); 
+
+INSERT INTO employee_hobby (name, description)
+VALUES	('Soccer','Futbol Soccer y relacionados'),
+		('Natacion','Natacion, Deportes Acuaticos y relacionados'),
+		('Musica','Composicion, Canto y relacionados');
+
+CREATE TABLE employee_hobby_rel (
+	id bigserial primary key,
+	employee_id int NOT NULL,
+	hobby_id int NOT NULL
+); 
+
+
+INSERT INTO employee_hobby_rel (employee_id, hobby_id)
+VALUES	(1,1),(1,2),
+		(2,2),(2,1),
+		(3,1),(3,3),
+		(4,2),(4,3);
+		
+SELECT e.id, e.first_name, e.last_name, h.description as hobby
+FROM employee e, employee_hobby h, employee_hobby_rel hl
+WHERE e.id = hl.employee_id and h.id = hl.hobby_id
+ORDER BY e.id ASC ;
 
 -- ...
