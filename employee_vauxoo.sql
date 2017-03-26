@@ -77,4 +77,20 @@ FROM employee e, employee_hobby h, employee_hobby_rel hl
 WHERE e.id = hl.employee_id and h.id = hl.hobby_id
 ORDER BY e.id ASC ;
 
+--sql3
+
+ALTER TABLE employee ADD COLUMN supervisor_id smallint NULL;
+
+UPDATE employee SET supervisor_id = 2 WHERE id = 1;
+UPDATE employee SET supervisor_id = 2 WHERE id = 2;
+UPDATE employee SET supervisor_id = 1 WHERE id = 3;
+UPDATE employee SET supervisor_id = 3 WHERE id = 4;
+
+ALTER TABLE employee ADD COLUMN position text NULL;
+
+UPDATE employee SET position = 'Developer' WHERE id = 1;
+UPDATE employee SET position = 'CEO' 	   WHERE id = 2;
+UPDATE employee SET position = 'Operator'  WHERE id = 3;
+UPDATE employee SET position = 'Analist'   WHERE id = 4;
+
 -- ...
