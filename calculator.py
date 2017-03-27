@@ -6,7 +6,7 @@ que de salida regrese la suma de los mismos.
 
 
 class calculator_class:
-        # Mediente una lista, almacenaremos los numeros a sumar en el metodo
+    # Mediente una lista, almacenaremos los numeros a sumar en el metodo
     list = []
     sum_number = 0
 
