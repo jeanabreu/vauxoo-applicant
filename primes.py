@@ -13,9 +13,7 @@ class PrimeClass(object):
         Method to calculate if a number is prime or NOT
         """
         # A loop is initialized to calculate the given number.
-        input_n = raw_input("Type a Number: ")
-        num_int = int(input_n)
-        counter = 0
+        counter = num_int
         for nbr in range(1, num_int + 1):
             if (num_int % nbr) == 0:
                 counter = counter + 1
