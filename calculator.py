@@ -16,8 +16,7 @@ class CalculatorClass(object):
         # The value entered in Variable "x" by the user, will be the size of
         # the list.
         num_list = 0
-        list_input = int(raw_input("Size of the List: "))
-        for nbr in range(list_input):
+        for nbr in range(num_list):
             # The user will type the numbers to this sum
             self.list.append(int(raw_input("Type the number: ")))
         for nbr in self.list:
