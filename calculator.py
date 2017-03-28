@@ -12,6 +12,9 @@ class CalculatorClass(object):
     sum_number = 0
 
     def sum(self):
+    	"""
+        Method to calculate the sum of a list
+        """
         # The value entered in Variable "x" by the user, will be the size of
         # the list.
         list_input = int(raw_input("Size of the List: "))

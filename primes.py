@@ -11,15 +11,18 @@ class PrimeClass(object):
     num_int = int(input_n)
 
     def is_prime(self):
-        counter = 0
+    	"""
+        Method to calculate if a number is prime or NOT
+        """
         # A loop is initialized to calculate the given number.
+        counter = 0
         for nbr in range(1, self.num_int + 1):
             if (self.num_int % nbr) == 0:
                 counter = counter + 1
             if counter >= 3:
                 break
         # With the results, we show if the number is prime or NOT in a
-        # comparison with val_bool variable 
+        # comparison with val_bool variable
         val_bool = counter
         if val_bool == 2:
             print val_bool == 2
@@ -28,6 +31,6 @@ class PrimeClass(object):
 
 
 # The "is_prime" method will show the result
-# pylint: disable=C0103 
+# pylint: disable=C0103
 prime = PrimeClass()
 prime.is_prime()
