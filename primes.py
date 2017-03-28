@@ -35,5 +35,3 @@ class PrimeClass(object):
 # pylint: disable=C0103
 prime = PrimeClass()
 prime.is_prime()
-
-

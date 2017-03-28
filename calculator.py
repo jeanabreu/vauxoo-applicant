@@ -29,5 +29,3 @@ class CalculatorClass(object):
 # pylint: disable=C0103
 calc = CalculatorClass()
 calc.sum()
-
-
