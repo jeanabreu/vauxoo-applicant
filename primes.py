@@ -1,5 +1,5 @@
 """
-Resolution to problem py1: This script will receive an integer and the output will return if it is prime or NOT with a True or False.
+This script will receive an integer and return if it is prime or NOT
 """
 
 
@@ -9,6 +9,7 @@ class PrimeClass:
     """
     input_n = raw_input("Type a Number: ")
     num_int = int(input_n)
+
 
     def is_prime(self):
         counter = 0
@@ -25,7 +26,8 @@ class PrimeClass:
             print(val_bool == 2)
         else:
             print(val_bool == 0)
+
+
 # The "is_prime" method will show the result
 obj = PrimeClass()
 obj.is_prime()
-
