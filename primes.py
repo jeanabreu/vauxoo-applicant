@@ -6,7 +6,9 @@ return if it is prime or NOT with a True or False.
 
 
 class prime_class:
-    # We created a variable to capture the integer number
+    """
+    We created a variable to capture the integer number
+    """
     input_n = raw_input("Type a Number: ")
     number = int(input_n)
 
