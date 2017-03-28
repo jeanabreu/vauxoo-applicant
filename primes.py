@@ -1,22 +1,20 @@
 """
-Resolution to problem py1:
-This script will receive an integer and the output will 
-return if it is prime or NOT with a True or False.
+Resolution to problem py1: This script will receive an integer and the output will return if it is prime or NOT with a True or False.
 """
 
 
-class prime_class:
+class PrimeClass:
     """
     We created a variable to capture the integer number
     """
     input_n = raw_input("Type a Number: ")
-    number = int(input_n)
+    num_int = int(input_n)
 
     def is_prime(self):
         counter = 0
         # A loop is initialized to calculate the given number.
-        for i in range(1, self.number + 1):
-            if (self.number % i) == 0:
+        for i in range(1, self.num_int + 1):
+            if (self.num_int % i) == 0:
                 counter = counter + 1
             if counter >= 3:
                 break
@@ -28,5 +26,6 @@ class prime_class:
         else:
             print(val_bool == 0)
 # The "is_prime" method will show the result
-obj = prime_class()
+obj = PrimeClass()
 obj.is_prime()
+
