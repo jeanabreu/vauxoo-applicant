@@ -18,7 +18,7 @@ class CalculatorClass(object):
         # the list.
         list_input = int(raw_input("Size of the List: "))
         for nbr in range(list_input):
-            # The user will type the numbers to sum
+            # The user will type the numbers to this sum
             self.list.append(int(raw_input("Type the number: ")))
         for nbr in self.list:
             self.sum_number += nbr
