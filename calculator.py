@@ -14,15 +14,16 @@ class CalculatorClass(object):
     def sum(self):
         # The value entered in Variable "x" by the user, will be the size of
         # the list.
-        x = int(raw_input("Size of the List: "))
-        for i in range(x):
+        list_input = int(raw_input("Size of the List: "))
+        for nbr in range(list_input):
             # The user will type the numbers to sum
             self.list.append(int(raw_input("Type the number: ")))
-        for i in self.list:
-            self.sum_number += i
+        for nbr in self.list:
+            self.sum_number += nbr
         print "\n Sum Total:", self.sum_number
 
 
 # The "sum" method will show the result
-obj = CalculatorClass()
-obj.sum()
+# pylint: disable=C0103
+calc = CalculatorClass()
+calc.sum()
