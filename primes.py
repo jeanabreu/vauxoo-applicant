@@ -4,6 +4,7 @@ This script will receive an integer and return if it is prime or NOT
 
 
 class PrimeClass(object):
+
     """
     We created a variable to capture the integer number
     """
@@ -11,7 +12,7 @@ class PrimeClass(object):
     num_int = int(input_n)
 
     def is_prime(self):
-    	"""
+        """
         Method to calculate if a number is prime or NOT
         """
         # A loop is initialized to calculate the given number.
@@ -34,3 +35,5 @@ class PrimeClass(object):
 # pylint: disable=C0103
 prime = PrimeClass()
 prime.is_prime()
+
+
