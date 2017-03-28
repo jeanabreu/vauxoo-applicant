@@ -18,8 +18,8 @@ class PrimeClass(object):
                 counter = counter + 1
             if counter >= 3:
                 break
-        """ With the results, we show if the number is prime or NOT in a"""
-        """ comparison with val_bool variable """
+        # With the results, we show if the number is prime or NOT in a"""
+        # comparison with val_bool variable """
         val_bool = counter
         if val_bool == 2:
             print val_bool == 2
@@ -27,6 +27,6 @@ class PrimeClass(object):
             print val_bool == 0
 
 
-""" The "is_prime" method will show the result"""
-result_prime = PrimeClass()
-result_prime.is_prime()
+# The "is_prime" method will show the result #
+resultprime = PrimeClass()
+resultprime.is_prime()
