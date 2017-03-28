@@ -1,11 +1,10 @@
 """
-Resolution to problem py2:
-This script will receive as input a list of numbers and
-That output returns the sum of them.
+This script will receive  a list of numbers and return the sum of them.
 """
 
 
-class calculator_class:
+class CalculatorClass(object):
+
     """
     Using a list, we will save the numbers to be added in the method
     """
@@ -23,6 +22,8 @@ class calculator_class:
             self.sum_number += i
         print "\n Sum Total:", self.sum_number
 
+
 # The "sum" method will show the result
-obj = calculator_class()
+obj = CalculatorClass()
 obj.sum()
+

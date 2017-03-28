@@ -10,7 +10,6 @@ class PrimeClass:
     input_n = raw_input("Type a Number: ")
     num_int = int(input_n)
 
-
     def is_prime(self):
         counter = 0
         # A loop is initialized to calculate the given number.
