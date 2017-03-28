@@ -9,13 +9,13 @@ class PrimeClass(object):
     We created a variable to capture the integer number
     """
     input_n = raw_input("Type a Number: ")
-    num_int = int(input_n)
-
-    def is_prime(self):
+    
+    def is_prime(self, num_int):
         """
         Method to calculate if a number is prime or NOT
         """
         # A loop is initialized to calculate the given number.
+        num_int = int(input_n)
         counter = 0
         for nbr in range(1, self.num_int + 1):
             if (self.num_int % nbr) == 0:
@@ -26,12 +26,7 @@ class PrimeClass(object):
         # comparison with val_bool variable
         val_bool = counter
         if val_bool == 2:
-            print val_bool == 2
+            return True
         else:
-            print val_bool == 0
-
-
-# The "is_prime" method will show the result
-# pylint: disable=C0103
-prime = PrimeClass()
-prime.is_prime()
+            return False
+            
