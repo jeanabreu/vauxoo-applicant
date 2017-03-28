@@ -26,4 +26,3 @@ class CalculatorClass(object):
 # The "sum" method will show the result
 obj = CalculatorClass()
 obj.sum()
-

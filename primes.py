@@ -3,7 +3,7 @@ This script will receive an integer and return if it is prime or NOT
 """
 
 
-class PrimeClass:
+class PrimeClass(object):
     """
     We created a variable to capture the integer number
     """
@@ -22,9 +22,9 @@ class PrimeClass:
         # comparison with val_bool variable
         val_bool = counter
         if val_bool == 2:
-            print(val_bool == 2)
+            print val_bool == 2
         else:
-            print(val_bool == 0)
+            print val_bool == 0
 
 
 # The "is_prime" method will show the result
