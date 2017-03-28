@@ -6,7 +6,9 @@ That output returns the sum of them.
 
 
 class calculator_class:
-    # Using a list, we will save the numbers to be added in the method
+    """
+    Using a list, we will save the numbers to be added in the method
+    """
     list = []
     sum_number = 0
 
